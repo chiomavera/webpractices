@@ -1,6 +1,5 @@
 /*General*/
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 *{
     box-sizing: border-box;
     padding: 0;
@@ -13,8 +12,8 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
     font-size: 1em;
+    background-color: var(--main-color);
 }
 
 ul{
@@ -23,14 +22,15 @@ ul{
 
 a{
     text-decoration: none;
+    cursor: pointer;
 }
 
 h1{
-    font-family: inherit;
+    font-weight: 400;
     letter-spacing: 3px;
     margin: 15px 0;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 h1:hover{
@@ -39,26 +39,160 @@ h1:hover{
 
 /*Navigation*/
 .navbar{
-    background-color: var(--main-color);
-    color: #fff;
-    height: 75px;
+    background-color: #fff;
+    color: var(--main-color);
+    height: 70px;
 }
+
 .navbar .flex{
     justify-content: space-between;
     align-items: center;
 }
+
 .navbar  nav ul{
     display: flex;
 }
+
 .navbar nav ul a{
-    color: #fff;
+    color: var(--main-color);
     padding: 10px;
     margin: 0 10px;
 }
+
 .navbar nav ul a:hover{
-    border-bottom: #eee 2px solid;
-    border-top: #eee 2px solid;
-    color: hotpink;
+    border-bottom:hotpink 2px solid;
+    border-top: hotpink 2px solid;
+}
+
+
+/*Display*/
+.display{
+    height: 400px;
+    background-color: #fff;
+    color: var(--main-color);
+    position: relative;
+}
+.display h2{
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 35px;
+}
+.display h3{
+        font-weight: 300;
+        font-size: 25px;
+        color: inherit;
+        line-height: 2;
+        text-align: center;
+}
+.display-text{
+    font-weight: 500;
+}
+
+.display p{
+    margin: 20px 0;
+ 
+}
+
+.display .grid{
+    overflow: hidden;
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+}
+
+.display-form{
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    padding: 40px;
+    z-index: 100;
+    justify-self: flex-end;
+}
+
+.display-form .form-control{
+    margin: 30px 0;
+}
+
+.display-form input[type="text"],
+.display-form input[type="email"] {
+    border: 0;
+    border-bottom: 1px solid rgb(204, 200, 200);
+    width: 100%;
+    border-radius: 3px;
+    padding: 3px;
+    font-size: 16px;
+    background-color: navy;
+}
+
+.display-form input[type="text"]:hover,
+.display-form input[type="email"]:hover{
+    border-bottom: 1px solid hotpink;
+
+}
+
+.display-form input:focus{
+    outline: none;
+}
+
+.form-card{
+    background-color: var(--main-color);
+    color: rgb(204, 200, 200);
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+    padding: 20px;
+}
+
+.display::before,
+.display::after{
+    content:'';
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background-color: var(--main-color);
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+}
+.btn{
+    display: inline-block;
+    color: #fff;
+    padding: 9px 25px;
+    outline: none;
+    background-color: var(--main-color, navy);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+.btn:hover{
+    color: var(--main-color);
+    background-color: hotpink;
+    transform: scale(0.98);
+}
+
+.btn2{
+    display: inline-block;
+    background-color: navy;
+    padding: 9px 25px;
+    color:rgb(204, 200, 200);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.btn2-outline{
+    border: 1px solid rgb(204, 200, 200);
+    background-color: transparent;
+}
+
+.btn2-outline:hover{
+    transform: scale(0.98);
+    border: 1px solid hotpink;
 }
 
 /*utilities*/
@@ -70,7 +204,16 @@ h1:hover{
 }
 .flex{
     display: flex;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 
+   
 }
 
 
