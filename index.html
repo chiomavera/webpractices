@@ -7,7 +7,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
-        <title>Trojan | Web Practice By Vera</title>
+        <link rel="stylesheet" href="utilities.css">
+        <title>Trojan | Web Practice (Clone of Loruki Website) By Vera</title>
     </head>
 
     <body>
@@ -24,17 +25,17 @@
       </header>
 
       <!--Display-->
-      <main class="display">
+      <section class="display">
 
-          <div class="container grid">
+          <div class="container grid grid-2">
             <section class="display-text">
-              <h2>Easier Development</h2>
-              <p>Build web apps of all kinds, from large scale enterprise APIs to static websites for individuals. Fill out the form to connect with us</p>
-              <a href="about.html" class="btn">read more</a>
+              <h2>Easier Deloyment</h2>
+              <p>Deploy web apps of all kinds, from large scale enterprise APIs to static websites for individuals. Fill out the form to connect with us.</p>
+              <a href="howitworks.html" class="btn btn-outline">read more</a>
             </section>
             
-          <section class="display-form form-card">
-              <h3>Get Started</h3>
+          <section class="display-form card">
+              <h3>Request a Demo</h3>
               <form>
                   <div class="form-control">
                     <input type="text" name="name" placeholder="Full Name" required>
@@ -48,10 +49,120 @@
                     <input type="email" name="email" placeholder="Email" required>
                   </div>
 
-                  <input type="submit" class="btn2 btn2-outline" value="submit" required>
+                  <input class="btn btn-light" type="submit" value="send" required>
               </form>
           </section>
+          </div>
+      </section> 
+      
+      <!--Statistics-->
+      <section class="statistics">
+        <div class="container">
+          <h3 class="statistics-heading text-center">
+            Welcome to the best platform for building  applications of all types with modern architechure and scaling.
+          </h3>
+          <div class="grid grid-3 text-center my-4">
+            <div>
+              <i class="fas fa-server fa-3x"></i>
+              <h2 class="text-primary">13,449,505</h2>
+              <p>Deployments</p>
+            </div>
+            <div>
+              <i class="fas fa-upload fa-3x"></i>
+              <h2 class="text-primary">1100 TB</h2>
+              <p>Published</p>
+            </div>
+            <div>
+              <i class="fas fa-project-diagram fa-3x"></i>
+              <h2 class="text-primary">3,449,705</h2>
+              <p>Projects</p>
+            </div>
+          </div>
         </div>
-      </main>   
+      </section>
+
+      <!--Cli-->
+      <section class="cli">
+        <div class="container grid">
+          <img src="images\images\cli.png" alt="Cli-image">
+          <div class="card">
+            <h3>Easy to use, cross platform CLI</h3>
+          </div>
+          <div class="card">
+            <h3>Deploy in seconds</h3>
+          </div>
+        </div>
+      </section>
+
+      <!--Cloud-->
+      <section class="cloud my-2 py-2">
+        <div class="container grid">
+          <div class="text-center">
+            <h2 class="lg">Extreme Cloud Hosting</h2>
+            <p class="lead my-1">Cloud hosting like you've never seen. Fast, Efficient and Scalable</p>
+            <a href="Howitworks.html" class="btn btn-outline">Read More</a>
+          </div>
+          <img src="images\images\cloud.png" alt="cloud-hosting-image">
+        </div>
+      </section>
+
+      <!--Languages-->
+      <section class="languages">
+        <h2 class="text-center md my-2">Supported Languages</h2>
+        <div class="container flex">
+          <div class="card">
+            <h4>Node.js</h4>
+            <img src="images\images\logos\node.png" alt="Node">
+          </div>
+          <div class="card">
+            <h4>Python</h4>
+            <img src="images\images\logos\python.png" alt="Python">
+          </div>
+          <div class="card">
+            <h4>Php</h4>
+            <img src="images\images\logos\php.png" alt="Php">
+          </div>
+          <div class="card">
+            <h4>C#</h4>
+            <img src="images\images\logos\csharp.png" alt="C#">
+          </div>
+          <div class="card">
+            <h4>Ruby</h4>
+            <img src="images\images\logos\ruby.png" alt="Ruby">
+          </div>
+          <div class="card">
+            <h4>Scala</h4>
+            <img src="images\images\logos\scala.png" alt="Scala">
+          </div>
+          <div class="card">
+            <h4>Clojure</h4>
+            <img src="images\images\logos\clojure.png" alt="Clojure">
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer py-5">
+        <div class="container grid grid-3">
+          <div>
+            <h1>Trojan</h1>
+            <p>Copyright © 2020</p>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="features.html">Features</a></li>
+              <li><a href="docs.html">Docs</a></li>
+            </ul>
+          </nav>
+          <div class="social">
+            <a href="#"><i class="fab fa-github fa-2x"></i></a>
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+          </div>
+        </div>
+      </footer>
+      
     </body>
 </html>
